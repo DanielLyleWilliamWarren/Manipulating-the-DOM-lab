@@ -3,22 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nameInput = document.querySelector('#name');
   nameInput.addEventListener('input', (event) => {
-  name = event.target.value;
+  let name = event.target.value;
   });
 
-  const radioInput = document.querySelector('fieldset');
+  const radioInput = document.querySelector('#type');
   radioInput.addEventListener('input', (event) =>{
-    type = event.target.value
+  let  type = event.target.value
   });
 
   const weightInput = document.querySelector('#weight');
   weightInput.addEventListener('input', (event) => {
-    weight = event.target.value
+  let weight = event.target.value
   });
 
   const selectCategory = document.querySelector('#category');
   selectCategory.addEventListener('change', (event) => {
-    category = event.target.value
+  let category = event.target.value
   });
 
   const formInput = document.querySelector('#form');
@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = event.target.name.value;
     const weight = event.target.weight.value;
-    const radio = event.target.fieldset.value;
+    const type = event.target.type.value;
     const catagory = event.target.category.value;
 
 
     const formDetails = document.createElement('p');
-    formDetails.textContent = `You spotted ${name}, which weighs ${weight} which is a ${radio} and you should ${catagory}`;
+    formDetails.textContent = `You spotted ${name}, which weighs ${weight} and is a ${type} and you should ${catagory}`;
 
     const dinosaursSpotted = document.querySelector('#dinosaurs-spotted');
     dinosaursSpotted.appendChild(formDetails);
