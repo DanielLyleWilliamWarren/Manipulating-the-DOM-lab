@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Dinosaur's Spotted</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+
+    <legend>Would it eat you?</legend>
+    <form id="form">
+      <div id="form-wrapper">
+<br>
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+<br>
+        <div class="form-item">
+          <label for="weight" class="primary">Weight</label>
+          <input type="number" id="weight" required/>
+        </div>
+<br>
+        <div class="form-item">
+          <label for="category" class="primary">Threat Level To Humans</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Go and pat it on the nose">Go and pat it on the nose</option>
+            <option value="Safe to prod with stick">Safe to prod with stick</option>
+            <option value="Don't get to close">Don't get to close</option>
+            <option value="Safe to view through binoculars">Safe to view through binoculars</option>
+            <option value="Run, just Run!">Run, just Run!</option>
+          </select>
+        </div>
+<br>
+
+        <div class="form-item">
+          <fieldset>
+
+          <div>
+            <input type="radio" id="carni" name="dino"  />
+            <label for="carni">Carnivore</label>
+            </div>
+            <div>
+            <input type="radio" id="herbi" name="dino" />
+            <label for="herbi">Herbivore</label>
+          </div>
+        </fieldset>
+        </div>
+
+
+<br>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+
+  <h1>Dinosaur's Spotted</h1>
+  <div id="dinosaurs-spotted">
+
+    <input id='btnRemoveData' type="button" value="Remove Dino"/>
+
+  </div>
+</body>
+</html>
