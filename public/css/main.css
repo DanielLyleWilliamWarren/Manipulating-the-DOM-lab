@@ -1,0 +1,24 @@
+@font-face {
+font-family: "Jurassic Park";
+src: url("/fonts/Jurassic Park.ttf") format("truetype");
+}
+
+.title{
+  font-family: "Jurassic Park", serif;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0 0 1em #ff0101;
+}
+
+body  {
+ background: url("https://media.giphy.com/media/vi25ZQAru7gqI/giphy.gif")
+ center fixed;
+ background-size:cover;
+ text-align: center;
+ color: white;
+ text-shadow: 0 0 1em #ff0101;
+}
+
+label{
+  font-size: 1.5em;
+}
